@@ -16,11 +16,12 @@ User bina kisi external software ke directly web par image enhance kar sakta hai
 ---
 
 ## 👨‍💻 Team Members
-** Jaypal Singh **
+**Jaypal Singh**
 
 ---
 
 ## 🚀 Deployment Link
 🔗 Live Demo:  
+
 
 
