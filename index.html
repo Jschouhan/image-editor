@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Image Editor</title>
+    <link rel="stylesheet" href="theme.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <section>
+        <!-- LEFT -->
+        <div class="left">
+          <div class="top">
+            <label class="btn choose-btn">
+              Choose Image
+              <input type="file" id="imageInput" hidden />
+            </label>
+            <button class="btn reset-btn" id="reset-btn">Reset</button>
+            <button class="btn download-btn" id="download-btn">Download</button>
+          </div>
+
+          <div class="bottom">
+            <div class="placeholder">
+              <i class="fa-regular fa-image"></i>
+              <p>No image chosen</p>
+            </div>
+            <img id="preview" />
+          </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="right">
+          <h2>Filters</h2>
+          <div class="filters"></div>
+
+          <h3>Presets</h3>
+          <div class="presets">
+            <button data-preset="drama">Drama</button>
+            <button data-preset="vintage">Vintage</button>
+            <button data-preset="oldschool">Old School</button>
+            <button data-preset="cyberpunk">Cyberpunk</button>
+            <button data-preset="softglow">Soft Glow</button>
+            <button data-preset="faded">Faded</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

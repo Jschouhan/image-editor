@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: var(--bg-primary-color);
+  color: var(--text-primary-color);
+  font-family: system-ui, sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  padding: var(--padding-2xl);
+}
+
+main section {
+  width: 100%;
+  max-width: 1400px; /* large screens ke liye */
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 3rem;
+  align-items: stretch;
+}
+
+.left {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-top: 1rem; /* 🔥 NEW */
+}
+
+.right {
+  width: 35%;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: var(--border-radius-md);
+  background: var(--bg-active-color);
+  cursor: pointer;
+}
+
+.choose-btn {
+  background-color: #f2f2f2; /* soft white */
+  color: #000; /* text visible */
+  font-weight: 500;
+}
+
+.choose-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.choose-btn {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#reset-btn {
+  background: var(--bg-danger-color);
+  color: #fff;
+}
+#download-btn {
+  background: var(--bg-success-color);
+  color: #fff;
+}
+
+.bottom {
+  flex: 1;
+  margin-top: 1rem;
+  height: 420px;
+  background: #222;
+  border-radius: var(--border-radius-lg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  opacity: 0.6;
+}
+
+.placeholder i {
+  font-size: 6rem;
+}
+
+#preview {
+  max-width: 100%;
+  max-height: 100%;
+  display: none;
+}
+
+/* RIGHT */
+.right {
+  width: 30%;
+  background: var(--bg-secondary-color);
+  padding: 1.5rem;
+  border-radius: var(--border-radius-lg);
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.filter-container p {
+  margin-bottom: 0.4rem;
+  text-transform: capitalize;
+}
+
+/* SLIDERS (ALL SAME AS BRIGHTNESS) */
+.filter-container input[type="range"] {
+  width: 100%;
+  appearance: none;
+  height: 4px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.filter-container input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background: red;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.preset-title {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.presets button {
+  padding: 0.4rem 0.8rem;
+  background: #eee;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.presets button:hover {
+  background: #ddd;
+}
+
+.bottom::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at var(--x, 50%) var(--y, 50%),
+    rgba(255, 255, 255, 0.12),
+    transparent 40%
+  );
+  transition: background 0.1s;
+}
