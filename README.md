@@ -21,7 +21,8 @@ User bina kisi external software ke directly web par image enhance kar sakta hai
 ---
 
 ## 🚀 Deployment Link
-🔗 Live Demo:  
+🔗 Live Demo:  https://jaypal-editor.netlify.app/
+
 
 
 
